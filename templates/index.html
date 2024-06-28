@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcription & Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin: 0 auto;
+            width: 300px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+        }
+        input[type="submit"] {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 30px;
+        }
+        #result p {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #007bff; /* Change color to blue */
+            font-weight: bold; /* Add bold font weight */
+        }
+        #result-text {
+            width: 80%; /* Set the width to 80% of the parent container */
+            height: 200px; /* Set the height to 200 pixels */
+            margin: 0 auto; /* Center-align the textarea */
+            display: block; /* Ensure it's a block-level element */
+            padding: 10px; /* Add some padding */
+            border: 1px solid #ccc; /* Add a border */
+            border-radius: 5px; /* Add some border radius */
+            background-color: #f9f9f9; /* Set the background color */
+            resize: none; /* Disable textarea resizing */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sentiment Analysis on Incoming Calls</h1>
+    <form action="/transcribe" method="post" enctype="multipart/form-data">
+        <label for="audio">Select the Recorded call</label>
+        <input type="file" id="audio" name="audio" accept=".mp3,.wav"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="result">
+        <textarea id="result-text" rows="5" readonly></textarea>
+    </div>
+
+    <script>
+        // AJAX request to handle form submission
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/transcribe', true);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    var response = JSON.parse(xhr.responseText);
+                    document.getElementById('result-text').value = `
+                        Transcription: ${response.transcription}\n
+                        Sentiment: ${response.sentiment}
+                    `;
+                } else {
+                    document.getElementById('result-text').value = 'Error occurred during transcription and sentiment analysis.';
+                }
+            };
+            xhr.send(formData);
+        });
+    </script>
+</body>
+</html>
