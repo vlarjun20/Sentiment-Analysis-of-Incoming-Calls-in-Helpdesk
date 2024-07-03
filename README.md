@@ -37,7 +37,7 @@ In helpdesk operations, understanding the sentiment of incoming calls can signif
 To get started, clone the repository and install the required packages.
 
 ```bash
-git clone https://github.com/yourusername/sentiment-helpdesk.git
+git clone https://github.com/vlarjun20/sentiment analysis of incoming on helpdesk.git
 cd sentiment-helpdesk
 pip install -r requirements.txt
 ```
