@@ -38,7 +38,7 @@ To get started, clone the repository and install the required packages.
 
 ```bash
 git clone https://github.com/vlarjun20/sentiment analysis of incoming on helpdesk.git
-cd sentiment-helpdesk
+cd sentiment analysis of incoming calls on helpdesk
 pip install -r requirements.txt
 ```
 
