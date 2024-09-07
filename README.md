@@ -1,5 +1,5 @@
 
-# Sentiment Analysis of Helpdesk Calls
+# Sentiment Analysis of Incoming Calls in Helpdesk
 
 ![License](https://img.shields.io/github/license/vlarjun20/sentiment-helpdesk)
 ![Issues](https://img.shields.io/github/issues/vlarjun20/sentiment-helpdesk)
