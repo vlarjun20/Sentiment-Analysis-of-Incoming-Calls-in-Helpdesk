@@ -95,12 +95,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - All contributors for their valuable inputs.
 
 ---
-
-Feel free to open an issue if you have any questions or suggestions. Happy coding!
-```
-
-### Notes:
-- Replace `yourusername` with your GitHub username.
-- Ensure you have a `requirements.txt` file listing all dependencies.
-- Include `CONTRIBUTING.md` and `LICENSE` files if applicable.
-- Add sample data and results in the respective folders if they don't exist.
