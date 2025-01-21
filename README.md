@@ -1,9 +1,6 @@
 
 # Sentiment Analysis of Incoming Calls in Helpdesk
 
-![License](https://img.shields.io/github/license/vlarjun20/Sentiment-Analysis-of-Incoming-Calls-in-Helpdesk)
-![Issues](https://img.shields.io/github/issues/vlarjun20/Sentiment-Analysis-of-Incoming-Calls-in-Helpdeskk)
-![Stars](https://img.shields.io/github/stars/vlarjun20/Sentiment-Analysis-of-Incoming-Calls-in-Helpdesk)
 
 This repository contains a sentiment analysis application for incoming helpdesk calls using the `nlptown/bert-base-multilingual-uncased-sentiment` model from Hugging Face. It automatically classifies the sentiment of calls into positive, neutral, or negative, helping support teams respond more effectively.
 
