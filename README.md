@@ -25,7 +25,7 @@ In helpdesk operations, understanding the sentiment of incoming calls can signif
 
 - **Pre-trained BERT Model**: Utilizes `nlptown/bert-base-multilingual-uncased-sentiment` from Hugging Face.
 - **Multilingual Support**: Supports multiple languages, making it versatile for international helpdesks.
-- **Sentiment Classification**: Classifies text into five sentiment classes ranging from very negative to very positive.
+- **Sentiment Classification**: Classifies text into three sentiment classes ranging from very negative to very positive.
 - **Scalable**: Easily integrates with existing helpdesk systems.
 - **Real-time Analysis**: Supports real-time sentiment analysis of incoming calls.
 
