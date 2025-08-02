@@ -5,7 +5,7 @@
 This repository contains a sentiment analysis application for incoming helpdesk calls using the `nlptown/bert-base-multilingual-uncased-sentiment` model from Hugging Face. It automatically classifies the sentiment of calls into positive, neutral, or negative, helping support teams respond more effectively.
 
 ## Creators
-1. ARJUN VL
+1. ARJUN V L
 2. YUVASHREE S
 3. SANTHOSH G
 
@@ -97,4 +97,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - All contributors for their valuable inputs.
 
 ---
+
 
