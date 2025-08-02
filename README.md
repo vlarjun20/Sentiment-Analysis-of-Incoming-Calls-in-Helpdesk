@@ -6,7 +6,7 @@ This repository contains a sentiment analysis application for incoming helpdesk 
 
 ## Creators
 1. ARJUN V L
-2. YUVASHREE S
+2. YUVASHREE P
 3. SANTHOSH G
 
 ## Table of Contents
@@ -97,5 +97,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - All contributors for their valuable inputs.
 
 ---
+
 
 
