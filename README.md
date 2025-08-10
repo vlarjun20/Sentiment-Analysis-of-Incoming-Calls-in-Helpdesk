@@ -82,9 +82,6 @@ model = AutoModelForSequenceClassification.from_pretrained('nlptown/bert-base-mu
 
 The model achieves high accuracy in classifying the sentiments of the calls. Detailed performance metrics are available in the `results` folder.
 
-## Contributing
-
-Contributions are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on contributing to this project.
 
 ## License
 
@@ -97,6 +94,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) fi
 - All contributors for their valuable inputs.
 
 ---
+
 
 
 
